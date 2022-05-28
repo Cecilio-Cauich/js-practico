@@ -1,7 +1,7 @@
 # js-practico
 Mi repositorio de JavaScrip
 
-#Este repositorio va a contener todos los archivos del curso que estoy tomando en Platzi.
+#Este repositorio va a contener todos los archivos del curso de JS.
 ..
 
 ## Taller #1: Figuras geométricas
