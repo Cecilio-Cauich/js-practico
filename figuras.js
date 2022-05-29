@@ -52,12 +52,12 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert('El perimetro del cuadrado es: '+perimetro)
+    document.getElementById("salida-valor").innerHTML = perimetro+"cm";
 }
 function calcularAreaCuadrado(){
     const input = document.getElementById('InputCuadrado')
     const value = input.value;
 
-    const perimetro = areaCuadrado(value);
-    alert('El area del cuadrado es: '+perimetro)
+    const area = areaCuadrado(value);
+    document.getElementById("salida-valor").innerHTML = area+"cm2";
 }

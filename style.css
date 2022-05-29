@@ -1,0 +1,60 @@
+
+body{
+    margin: 10px;
+    background-image: url(img/blackboard.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+.main-container {
+    display: flex;
+}
+header{
+    color:lightseagreen;
+}
+
+.cuadrado {
+    background-color: gray;
+    border-radius: 20px;    
+}
+
+.titulo-div {
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.form-cuadrado{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+.input-lebel {
+    display: flex;
+    margin-bottom: 10px;
+}
+.botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones button {
+    height: 25px;
+    border: 10px;
+    border: none;
+    color: black;   
+}
+
+.salida {
+    display: flex;
+    border-bottom: 10px;
+    justify-content: center;
+}
+
+.salida p {
+    margin: 10px;
+}
+
+
