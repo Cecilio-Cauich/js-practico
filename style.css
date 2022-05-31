@@ -9,12 +9,13 @@ body{
 }
 .main-container {
     display: flex;
+    justify-content:space-around;
 }
 header{
     color:lightseagreen;
 }
 
-.cuadrado {
+.cuadrado, .circulo, .triangulo {
     background-color: gray;
     border-radius: 20px;    
 }
@@ -31,20 +32,37 @@ header{
     margin: 10px;
 
 }
-.input-lebel {
+
+.form-triangulo {
     display: flex;
-    margin-bottom: 10px;
+    flex-direction: column;
 }
+
+.input-datos {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.input-datos input {
+   border-radius: 15px;
+}
+
+
 .botones {
     display: flex;
     justify-content: space-around;
+    margin: 20px;
+
 }
 
 .botones button {
     height: 25px;
     border: 10px;
     border: none;
-    color: black;   
+    color: black;  
+    margin: 5px; 
+    border-radius: 15px;
 }
 
 .salida {

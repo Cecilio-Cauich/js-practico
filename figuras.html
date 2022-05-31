@@ -19,7 +19,7 @@
                 <h2>Cuadrado</h2>
             </div>
             <form action="" class="form-cuadrado">
-                <div class="input-lebel">
+                <div class="input-datos">
                     <label for="InputCuadrado">Ingrese el lado del cuadrado: </label>
     
                     <input id="InputCuadrado" type="number" name="">
@@ -36,7 +36,70 @@
     
             </form>
         </section>
+
+        <section class="triangulo">
+            <div  class="titulo-div">
+                <h2>Triangulo</h2>
+            </div>
+            <form action="" class="form-triangulo">
+                <div class="input-datos">
+
+                    <label for="lado1">Ingrese el lado 1: </label>
+
+                    <input id="lado1" type="number" name="">
+
+                    <label for="lado2">Ingrese el lado 2: </label>
+
+                    <input id="lado2" type="number" name="">
+
+
+                    <label for="base">Ingrese la base: </label>
+
+                    <input id="base" type="number" name="">
+
+
+                    <label for="altura">Ingrese la altura: </label>
+
+                    <input id="altura" type="number" name="">
+                </div>
+                <div class="botones">
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+                </div>
+                <div  class="salida">
+                    <p>Resultado : </p>
+                    <p id="salida-tri" placeholder="Resultado"></p>
+                </div>
+    
+    
+            </form>
+        </section>
+
+        <section class="circulo">
+            <div  class="titulo-div">
+                <h2>Circulo</h2>
+            </div>
+            <form action="" class="form-cuadrado">
+                <div class="input-datos">
+                    <label for="InputCirculo">Ingrese el radio: </label>
+    
+                    <input id="InputCirculo" type="number" name="">
+                </div>
+                <div class="botones">
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+                </div>
+                <div  class="salida">
+                    <p>Resultado : </p>
+                    <p id="salida-cir" placeholder="Resultado"></p>
+                </div>
+    
+    
+            </form>
+        </section>
     </div>
+
+    
 
     <script src="./figuras.js"></script>
     
