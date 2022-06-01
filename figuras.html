@@ -9,16 +9,21 @@
 </head>
 <body>
     <header>
-        <h1 class="main-title">Figuras geométricas</h1>
-        <p>Areas y Perimetros</p>
+        <h1 class="main-title">Proyecto JavaScript</h1>
+        <p>Este proyecto es principalmente de JavaScript sin embargo no pudo faltar HTML y CSS para complementarlo</p>
     </header>
+    <nav>
+        <a href="#">Figuras geométricas</a>
+        <a href="#">Precio con descuento</a>
+        <a href="#">Medianas y modas</a>
+    </nav>
 
     <div class="main-container">
         <section class="cuadrado">
             <div  class="titulo-div">
                 <h2>Cuadrado</h2>
             </div>
-            <form action="" class="form-cuadrado">
+            <form action="" class="form-inputs">
                 <div class="input-datos">
                     <label for="InputCuadrado">Ingrese el lado del cuadrado: </label>
     
@@ -41,7 +46,7 @@
             <div  class="titulo-div">
                 <h2>Triangulo</h2>
             </div>
-            <form action="" class="form-triangulo">
+            <form action="" class="form-inputs">
                 <div class="input-datos">
 
                     <label for="lado1">Ingrese el lado 1: </label>
@@ -79,6 +84,45 @@
             <div  class="titulo-div">
                 <h2>Circulo</h2>
             </div>
+            <form action="" class="form-inputs">
+                <div class="input-datos">
+                    <label for="InputCirculo">Ingrese el radio: </label>
+    
+                    <input id="InputCirculo" type="number" name="">
+                </div>
+                <div class="botones">
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+                </div>
+                <div  class="salida">
+                    <p>Resultado : </p>
+                    <p id="salida-cir" placeholder="Resultado"></p>
+                </div>
+    
+    
+            </form>
+        </section>
+
+        <section class="preciodescuento">
+            <h2>Calcula el precio a pagar de tus productos</h2>
+            <form action="" class="form-inputs">
+                <label for="InputPrice">Escribe el precio de tu producto:</label>
+                <input id="InputPrice" type="number">
+    
+                <label for="InputDiscount">Escribe el descuento de tu producto</label>
+                <input id="InputDiscount" type="number">
+    
+                <button type="button" onclick="priceDiscount()">
+                    Calcular PyD
+                </button>
+                <p id="output-pricedescount"></p>
+            </form>
+        </section>
+
+        <section class="circulo">
+            <div  class="titulo-div">
+                <h2>Circulo</h2>
+            </div>
             <form action="" class="form-cuadrado">
                 <div class="input-datos">
                     <label for="InputCirculo">Ingrese el radio: </label>
@@ -97,6 +141,7 @@
     
             </form>
         </section>
+
     </div>
 
     

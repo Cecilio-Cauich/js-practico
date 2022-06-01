@@ -9,13 +9,21 @@ body{
 }
 .main-container {
     display: flex;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-container section {
+    margin: 20px;
 }
 header{
     color:lightseagreen;
 }
 
-.cuadrado, .circulo, .triangulo {
+.cuadrado, 
+.circulo, 
+.triangulo,
+.preciodescuento {
     background-color: gray;
     border-radius: 20px;    
 }
@@ -26,16 +34,11 @@ header{
     color: antiquewhite;
 }
 
-.form-cuadrado{
+.form-inputs{
     display: flex;
     flex-direction: column;
     margin: 10px;
 
-}
-
-.form-triangulo {
-    display: flex;
-    flex-direction: column;
 }
 
 .input-datos {
