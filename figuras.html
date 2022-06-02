@@ -10,14 +10,8 @@
 <body>
     <header>
         <h1 class="main-title">Proyecto JavaScript</h1>
-        <p>Este proyecto es principalmente de JavaScript sin embargo no pudo faltar HTML y CSS para complementarlo</p>
+        <p class="main-text">Este proyecto es principalmente de JavaScript sin embargo no pudo faltar HTML y CSS para complementarlo</p>
     </header>
-    <nav>
-        <a href="#">Figuras geométricas</a>
-        <a href="#">Precio con descuento</a>
-        <a href="#">Medianas y modas</a>
-    </nav>
-
     <div class="main-container">
         <section class="cuadrado">
             <div  class="titulo-div">
@@ -50,22 +44,12 @@
                 <div class="input-datos">
 
                     <label for="lado1">Ingrese el lado 1: </label>
-
                     <input id="lado1" type="number" name="">
-
                     <label for="lado2">Ingrese el lado 2: </label>
-
                     <input id="lado2" type="number" name="">
-
-
                     <label for="base">Ingrese la base: </label>
-
                     <input id="base" type="number" name="">
 
-
-                    <label for="altura">Ingrese la altura: </label>
-
-                    <input id="altura" type="number" name="">
                 </div>
                 <div class="botones">
                     <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
@@ -102,30 +86,40 @@
     
             </form>
         </section>
-
+<!--Precios y descuentos-->
         <section class="preciodescuento">
-            <h2>Calcula el precio a pagar de tus productos</h2>
+            <div class="titulo-div">
+                <h2>Calcular precio con descuento</h2>
+            </div>
             <form action="" class="form-inputs">
-                <label for="InputPrice">Escribe el precio de tu producto:</label>
-                <input id="InputPrice" type="number">
-    
-                <label for="InputDiscount">Escribe el descuento de tu producto</label>
-                <input id="InputDiscount" type="number">
-    
-                <button type="button" onclick="priceDiscount()">
-                    Calcular PyD
-                </button>
-                <p id="output-pricedescount"></p>
+
+                <div class="input-datos">
+                    <label for="InputPrice">Precio de tu producto:</label>
+                    <input id="InputPrice" type="number">
+        
+                    <label for="InputDiscount">Ingrese copon</label>
+                    <input id="InputDiscount" type="text">
+                </div>
+
+                <div class="botones">
+                    <button type="button" onclick="priceDiscount()">
+                        Precio con descuento
+                    </button>
+                </div>
+
+                <div class="salida">
+                    <p id="output-pricedescount">Resultado:</p>
+                </div>
             </form>
         </section>
-
+<!--NO definido-->
         <section class="circulo">
             <div  class="titulo-div">
-                <h2>Circulo</h2>
+                <h2>Indefinido</h2>
             </div>
             <form action="" class="form-cuadrado">
                 <div class="input-datos">
-                    <label for="InputCirculo">Ingrese el radio: </label>
+                    <label for="InputCirculo">Ingrese el... </label>
     
                     <input id="InputCirculo" type="number" name="">
                 </div>

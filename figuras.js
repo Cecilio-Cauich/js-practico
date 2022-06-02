@@ -12,7 +12,9 @@ console.groupEnd()
 // codigo del triángulo
 
 console.group("Triangulo")
-
+function calcularAlturaTriangulo(base){
+    
+}
 function perimetroTriangulo(lado1, lado2, base){
     return  lado1 + lado2 + base;
 } 
@@ -104,3 +106,50 @@ function calcularAreaCirculo(){
     document.getElementById("salida-cir").innerHTML = area
 }
 
+//PRECIOS Y DESCUENTOS
+
+function calcularPrecioConDescuento(precio, descuento){
+    const porcentajePrecioConDescuento = 100 - descuento;
+    const precioConDescuento = (precio * (porcentajePrecioConDescuento)) / 100;
+    
+    return precioConDescuento
+}
+
+function priceDiscount(){
+    const inputPrices = document.getElementById("InputPrice");
+    const priceValue = inputPrices.value;
+
+    const inputCoupon = document.getElementById("InputDiscount");
+    const couponValue = inputCoupon.value;
+
+    const coupons = [
+        {
+            name: "JuanDC_es_Batman",
+            discount: 15,
+        },
+        {
+            name: "pero_no_le_digas_a_nadie",
+            discount: 30,
+        },
+        {
+            name: "es_un_secreto",
+            discount: 25,
+        },
+    ];
+    
+    const isCouponValueValid = function (coupon) {
+        return coupon.name === couponValue;
+    };
+    
+    const userCoupon = coupons.find(isCouponValueValid);
+    
+    if (!userCoupon) {
+        alert("El cupón " + couponValue + " no es válido");
+    } else {
+        const descuento = userCoupon.discount;
+        const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
+        
+      const resultP = document.getElementById("ResultP");
+      document.getElementById("output-pricedescount").innerHTML = precioConDescuento+' pesos';
+    }
+}

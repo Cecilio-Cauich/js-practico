@@ -5,4 +5,3 @@ function alturaIsosceles (lado1, lado2, Base, altura){
         console.log('La altura del triangulo isosceles es :'+area);
     }
 }
-
