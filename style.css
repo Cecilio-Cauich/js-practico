@@ -21,7 +21,6 @@ header{
     display: flex;
     justify-content: center;
 }
-
 .main-container {
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +39,7 @@ header{
     border-radius: 20px;    
 }
 
-.titulo-div {
+.main-title {
     display: flex;
     justify-content: center;
     color: #DCDCDC;
@@ -54,14 +53,14 @@ header{
 
 }
 
-.input-datos {
+.input-values {
     display: flex;
     flex-direction: column;
     margin: 20px;
     
 }
 
-.input-datos input {
+.input-values input {
    border-radius: 5px;
    height: 20px;
    margin-top: 5px;
@@ -69,14 +68,14 @@ header{
 }
 
 
-.botones {
+.form-btns {
     display: flex;
     justify-content: space-around;
     margin: 20px;
 
 }
 
-.botones button {
+.form-btns button {
     height: 25px;
     border: 10px;
     border: none;
@@ -85,13 +84,13 @@ header{
     border-radius: 5px;
 }
 
-.salida {
+.form-outputs {
     display: flex;
     border-bottom: 10px;
     justify-content: center;
 }
 
-.salida p {
+.form-outputs p {
     margin: 10px;
 }
 

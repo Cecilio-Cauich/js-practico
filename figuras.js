@@ -12,11 +12,9 @@ console.groupEnd()
 // codigo del triángulo
 
 console.group("Triangulo")
-function calcularAlturaTriangulo(base){
-    
-}
+
 function perimetroTriangulo(lado1, lado2, base){
-    return  lado1 + lado2 + base;
+    return lado1 + lado2 + base;
 } 
 
 function areaTriangulo(base, altura){
@@ -56,14 +54,14 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    document.getElementById("salida-valor").innerHTML = perimetro+"cm";
+    document.getElementById("out-cua").innerHTML = perimetro+"cm";
 }
 function calcularAreaCuadrado(){
     const input = document.getElementById('InputCuadrado')
     const value = input.value;
 
     const area = areaCuadrado(value);
-    document.getElementById("salida-valor").innerHTML = area+"cm2";
+    document.getElementById("out-cua").innerHTML = area+"cm2";
 }
 
 //Triangulo
@@ -75,19 +73,17 @@ function calcularAreaTriangulo(){
     const alturas = input2.value
 
     const area = areaTriangulo(bases, alturas)
-    document.getElementById("salida-tri").innerHTML = area;
+    document.getElementById("out-tri").innerHTML = area;
 }
 function calcularPerimetroTriangulo(){
     const input1 = document.getElementById("lado1")
     const val1 = input1.value
-
     const input2 = document.getElementById("lado2")
     const val2 = input2.value
     const input3 = document.getElementById("base")
     const val3 = input3.value
-
     const perimetro = perimetroTriangulo(val1,val2,val3)
-    document.getElementById("salida-tri").innerHTML = perimetro;
+    document.getElementById("out-tri").innerHTML = perimetro;
 }
 
 //Circulo
@@ -96,14 +92,14 @@ function calcularPerimetroCirculo(){
 
     const valor = input.value
     const perimetro = perimetroCirculo(valor)
-    document.getElementById("salida-cir").innerHTML = perimetro
+    document.getElementById("out-cir").innerHTML = perimetro
 }
 function calcularAreaCirculo(){
     const input = document.getElementById("InputCirculo")
 
     const valor = input.value
     const area = areaCirculo(valor)
-    document.getElementById("salida-cir").innerHTML = area
+    document.getElementById("out-cir").innerHTML = area
 }
 
 //PRECIOS Y DESCUENTOS
@@ -124,15 +120,15 @@ function priceDiscount(){
 
     const coupons = [
         {
-            name: "JuanDC_es_Batman",
+            name: "JuanDC_es_Batman", //descuento del 15%
             discount: 15,
         },
         {
-            name: "pero_no_le_digas_a_nadie",
+            name: "pero_no_le_digas_a_nadie", //descuento del 30%
             discount: 30,
         },
         {
-            name: "es_un_secreto",
+            name: "es_un_secreto", //descuenot del 25%
             discount: 25,
         },
     ];
@@ -150,6 +146,6 @@ function priceDiscount(){
         const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
         
       const resultP = document.getElementById("ResultP");
-      document.getElementById("output-pricedescount").innerHTML = precioConDescuento+' pesos';
+      document.getElementById("output-priceDescount").innerHTML = precioConDescuento+' pesos';
     }
 }

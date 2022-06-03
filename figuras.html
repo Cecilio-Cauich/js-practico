@@ -14,22 +14,22 @@
     </header>
     <div class="main-container">
         <section class="cuadrado">
-            <div  class="titulo-div">
+            <div  class="main-title">
                 <h2>Cuadrado</h2>
             </div>
             <form action="" class="form-inputs">
-                <div class="input-datos">
+                <div class="input-values">
                     <label for="InputCuadrado">Ingrese el lado del cuadrado: </label>
     
                     <input id="InputCuadrado" type="number" name="">
                 </div>
-                <div class="botones">
+                <div class="form-btns">
                     <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
                     <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
                 </div>
-                <div  class="salida">
+                <div  class="form-outputs">
                     <p>Resultado : </p>
-                    <p id="salida-valor" placeholder="Resultado"></p>
+                    <p id="out-cua"></p>
                 </div>
     
     
@@ -37,27 +37,32 @@
         </section>
 
         <section class="triangulo">
-            <div  class="titulo-div">
+            <div  class="main-title">
                 <h2>Triangulo</h2>
             </div>
             <form action="" class="form-inputs">
-                <div class="input-datos">
+                <div class="input-values">
 
                     <label for="lado1">Ingrese el lado 1: </label>
                     <input id="lado1" type="number" name="">
+
                     <label for="lado2">Ingrese el lado 2: </label>
                     <input id="lado2" type="number" name="">
+
                     <label for="base">Ingrese la base: </label>
                     <input id="base" type="number" name="">
+                    
+                    <label for="altura">Ingrese la altura: </label>
+                    <input id="altura" type="number" name="">
 
                 </div>
-                <div class="botones">
+                <div class="form-btns">
                     <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
                     <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
                 </div>
-                <div  class="salida">
+                <div  class="form-outputs">
                     <p>Resultado : </p>
-                    <p id="salida-tri" placeholder="Resultado"></p>
+                    <p id="out-tri" placeholder="Resultado"></p>
                 </div>
     
     
@@ -65,22 +70,22 @@
         </section>
 
         <section class="circulo">
-            <div  class="titulo-div">
+            <div  class="main-title">
                 <h2>Circulo</h2>
             </div>
             <form action="" class="form-inputs">
-                <div class="input-datos">
+                <div class="input-values">
                     <label for="InputCirculo">Ingrese el radio: </label>
     
                     <input id="InputCirculo" type="number" name="">
                 </div>
-                <div class="botones">
+                <div class="form-btns">
                     <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
                     <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
                 </div>
-                <div  class="salida">
+                <div  class="form-outputs">
                     <p>Resultado : </p>
-                    <p id="salida-cir" placeholder="Resultado"></p>
+                    <p id="out-cir" placeholder="Resultado"></p>
                 </div>
     
     
@@ -88,12 +93,12 @@
         </section>
 <!--Precios y descuentos-->
         <section class="preciodescuento">
-            <div class="titulo-div">
-                <h2>Calcular precio con descuento</h2>
+            <div class="main-title">
+                <h2>Calcular precio con cupon</h2>
             </div>
             <form action="" class="form-inputs">
 
-                <div class="input-datos">
+                <div class="input-values">
                     <label for="InputPrice">Precio de tu producto:</label>
                     <input id="InputPrice" type="number">
         
@@ -101,33 +106,35 @@
                     <input id="InputDiscount" type="text">
                 </div>
 
-                <div class="botones">
+                <div class="form-btns">
                     <button type="button" onclick="priceDiscount()">
                         Precio con descuento
                     </button>
                 </div>
 
-                <div class="salida">
-                    <p id="output-pricedescount">Resultado:</p>
+                <div class="form-outputs">
+                    <p>Resultado : </p>
+                    <p id="output-priceDescount"></p>
                 </div>
             </form>
         </section>
+
 <!--NO definido-->
         <section class="circulo">
-            <div  class="titulo-div">
+            <div  class="main-title">
                 <h2>Indefinido</h2>
             </div>
             <form action="" class="form-cuadrado">
-                <div class="input-datos">
+                <div class="input-values">
                     <label for="InputCirculo">Ingrese el... </label>
     
                     <input id="InputCirculo" type="number" name="">
                 </div>
-                <div class="botones">
+                <div class="form-btns">
                     <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
                     <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
                 </div>
-                <div  class="salida">
+                <div  class="form-outputs">
                     <p>Resultado : </p>
                     <p id="salida-cir" placeholder="Resultado"></p>
                 </div>
