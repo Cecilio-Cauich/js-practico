@@ -77,11 +77,11 @@ function calcularAreaTriangulo(){
 }
 function calcularPerimetroTriangulo(){
     const input1 = document.getElementById("lado1")
-    const val1 = input1.value
+    const val1 = Number(input1.value)
     const input2 = document.getElementById("lado2")
-    const val2 = input2.value
+    const val2 = Number(input2.value)
     const input3 = document.getElementById("base")
-    const val3 = input3.value
+    const val3 = Number (input3.value)
     const perimetro = perimetroTriangulo(val1,val2,val3)
     document.getElementById("out-tri").innerHTML = perimetro;
 }
